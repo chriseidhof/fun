@@ -1,9 +1,12 @@
 module AST where
 
-data Value = IntValue Int
+data Value = IntValue Integer
            | StringValue String
            | BoolValue Bool
            deriving Show
+
+data Definition = Definition {name :: String, body ::  Expr}
+ deriving Show
 
 data Expr = Val Value
           | Var String
