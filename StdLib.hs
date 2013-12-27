@@ -13,6 +13,7 @@ stdlib = M.fromList [("add", Builtin "+" 2)
                     ,("mul", Builtin "*" 2)
                     ,("min", Builtin "-" 2)
                     ,("eq", Builtin "==" 2)
+                    ,("lte", Builtin "<=" 2)
                     ]
 
 bindStdLib :: Definition -> Definition
